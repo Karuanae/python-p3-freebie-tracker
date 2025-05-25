@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
 engine = create_engine('sqlite:///freebies.db')
-Base.metadata.create_all(engine)  # This line creates the tables
+
 Session = sessionmaker(bind=engine)
 session = Session()
 
